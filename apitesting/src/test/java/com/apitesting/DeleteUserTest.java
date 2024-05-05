@@ -16,11 +16,11 @@ public class DeleteUserTest {
 
         given()
                 .contentType(ContentType.JSON)
-                .pathParam("id", "60d0fe4f5311236168a109ca")
+                .pathParam("id", "663765c110f9d4f94043b0ae")
                 .when()
                 .delete("/user/{id}")
                 .then()
-                .statusCode(403) // Expected status code is 403 Forbidden due to missing app-id
+                .statusCode(403)
                 .body("error", equalTo("APP_ID_MISSING"));
     }
 
@@ -32,7 +32,7 @@ public class DeleteUserTest {
         given()
                 .contentType(ContentType.JSON)
                 .header("app-id", "appIdTidakValid")
-                .pathParam("id", "60d0fe4f5311236168a109ca")
+                .pathParam("id", "663765c110f9d4f94043b0ae")
                 .when()
                 .delete("/user/{id}")
                 .then()
@@ -48,12 +48,12 @@ public class DeleteUserTest {
         given()
                 .contentType(ContentType.JSON)
                 .header("app-id", "6627132f6cae03d7fddee77b")
-                .pathParam("id", "60d0fe4f5311236168a109ca")
+                .pathParam("id", "663765c110f9d4f94043b0ae")
                 .when()
                 .delete("/user/{id}")
                 .then()
                 .statusCode(200) // Expected status code is 200 OK for successful deletion
-                .body("id", equalTo("60d0fe4f5311236168a109ca"));
+                .body("id", equalTo("663765c110f9d4f94043b0ae"));
     }
 
     @Test

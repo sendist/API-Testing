@@ -16,11 +16,11 @@ public class GetUserByIdTest {
 
         given()
                 .contentType(ContentType.JSON)
-                .pathParam("id", "60d0fe4f5311236168a109ca")
+                .pathParam("id", "663763fd906c3a05dec6e798")
                 .when()
-                .put("/user/{id}")
+                .get("/user/{id}")
                 .then()
-                .statusCode(403) // Periksa bahwa status code adalah 403 Forbidden
+                .statusCode(403) 
                 .body("error", equalTo("APP_ID_MISSING"));
     }
 
@@ -32,11 +32,11 @@ public class GetUserByIdTest {
         given()
                 .contentType(ContentType.JSON)
                 .header("app-id", "60d0fe4f5311236168a109ca")
-                .pathParam("id", "60d0fe4f5311236168a109ca")
+                .pathParam("id", "663763fd906c3a05dec6e798")
                 .when()
-                .put("/user/{id}")
+                .get("/user/{id}")
                 .then()
-                .statusCode(403) // Periksa bahwa status code adalah 403 Forbidden
+                .statusCode(403) 
                 .body("error", equalTo("APP_ID_NOT_EXIST"));
     }
 
@@ -48,12 +48,12 @@ public class GetUserByIdTest {
         given()
                 .contentType(ContentType.JSON)
                 .header("app-id", "6627132f6cae03d7fddee77b")
-                .pathParam("id", "60d0fe4f5311236168a109ca")
+                .pathParam("id", "663763fd906c3a05dec6e798")
                 .when()
-                .put("/user/{id}")
+                .get("/user/{id}")
                 .then()
-                .statusCode(200) // Periksa bahwa status code adalah 403 Forbidden
-                .body("id", equalTo("60d0fe4f5311236168a109ca"));
+                .statusCode(200) 
+                .body("id", equalTo("663763fd906c3a05dec6e798"));
     }
 
     @Test
@@ -64,11 +64,11 @@ public class GetUserByIdTest {
         given()
                 .contentType(ContentType.JSON)
                 .header("app-id", "6627132f6cae03d7fddee77b")
-                .pathParam("id", "6627132f6cae03d7fddee77b")
+                .pathParam("id", "663763fd906c3a05dec6e799")
                 .when()
-                .put("/user/{id}")
+                .get("/user/{id}")
                 .then()
-                .statusCode(404) // Periksa bahwa status code adalah 403 Forbidden
+                .statusCode(404)
                 .body("error", equalTo("RESOURCE_NOT_FOUND"));
     }
 }
