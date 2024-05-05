@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.apitesting.UpdateTest" time="3.696" tests="5" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.apitesting.UpdateTest" time="3.843" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\daffa\AppData\Local\Temp\surefire10914342730854893882\surefirebooter-20240505194841687_3.jar C:\Users\daffa\AppData\Local\Temp\surefire10914342730854893882 2024-05-05T19-48-41_567-jvmRun1 surefire-20240505194841687_1tmp surefire_0-20240505194841687_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\daffa\AppData\Local\Temp\surefire16558934832768967789\surefirebooter-20240505195633884_3.jar C:\Users\daffa\AppData\Local\Temp\surefire16558934832768967789 2024-05-05T19-56-33_770-jvmRun1 surefire-20240505195633884_1tmp surefire_0-20240505195633884_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.apitesting.UpdateTest"/>
     <property name="surefire.test.class.path" value="E:\Polban\Semester 6\Software Testing\Dummy API\API-Testing\apitesting\target\test-classes;E:\Polban\Semester 6\Software Testing\Dummy API\API-Testing\apitesting\target\classes;C:\Users\daffa\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\daffa\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\daffa\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\daffa\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\daffa\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\daffa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\daffa\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\daffa\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\daffa\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\daffa\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\daffa\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\daffa\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\daffa\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\daffa\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\daffa\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\daffa\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\daffa\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\daffa\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\daffa\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\daffa\AppData\Local\Temp\surefire10914342730854893882\surefirebooter-20240505194841687_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\daffa\AppData\Local\Temp\surefire16558934832768967789\surefirebooter-20240505195633884_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -59,11 +59,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="tc01" classname="com.apitesting.UpdateTest" time="2.163"/>
-  <testcase name="tc06" classname="com.apitesting.UpdateTest" time="0.367"/>
-  <testcase name="tc07" classname="com.apitesting.UpdateTest" time="0.346"/>
-  <testcase name="tc09" classname="com.apitesting.UpdateTest" time="0.443"/>
-  <testcase name="tc19" classname="com.apitesting.UpdateTest" time="0.348">
+  <testcase name="tc01" classname="com.apitesting.UpdateTest" time="2.059"/>
+  <testcase name="tc06" classname="com.apitesting.UpdateTest" time="0.477"/>
+  <testcase name="tc07" classname="com.apitesting.UpdateTest" time="0.528"/>
+  <testcase name="tc09" classname="com.apitesting.UpdateTest" time="0.356"/>
+  <testcase name="tc19" classname="com.apitesting.UpdateTest" time="0.401">
     <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <400> but was <200>.
@@ -90,7 +90,7 @@ Expected status code <400> but was <200>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at com.apitesting.UpdateTest.tc19(UpdateTest.java:114)
+	at com.apitesting.UpdateTest.tc19(UpdateTest.java:112)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
