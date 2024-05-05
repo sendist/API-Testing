@@ -8,7 +8,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.json.simple.JSONObject; // Or your preferred JSON library
+import org.json.simple.JSONObject;
 
 public class CreateUserTest {
     public JSONObject getPayload() {
@@ -53,7 +53,7 @@ public class CreateUserTest {
 
     @Test
     public void TC01_Tanpa_appId() {
-        // POST operation without authorization header
+        // POST tanpa app-id
         JSONObject payload = getPayload();
 
         given()
@@ -70,7 +70,7 @@ public class CreateUserTest {
 
     @Test
     public void TC02_Dengan_appId_tidak_valid() {
-        // POST operation with invalid authorization header
+        // POST dengan app-id yang tidak valid
         JSONObject payload = getPayload();
 
         given()
@@ -87,7 +87,7 @@ public class CreateUserTest {
 
     @Test
     public void TC03_Dengan_appId_valid() {
-        // POST operation with valid authorization header
+        // POST dengan app-id yang valid dan body valid
         JSONObject payload = getPayload();
         String email = "emailtest@example.com";
         payload.put("email", email);
@@ -119,7 +119,7 @@ public class CreateUserTest {
 
     @Test
     public void TC04_Dengan_email_yg_sudah_digunakan() {
-        // POST operation with email that already used
+        // POST dengan email yang sudah digunakan
         JSONObject payload = getPayload();
         payload.put("email", "daffa@example.com");
 
@@ -137,7 +137,7 @@ public class CreateUserTest {
 
     @Test
     public void TC07_Field_firstName_kosong() {
-        // POST operation with empty firstName field
+        // POST dengan field firstName kosong
         JSONObject payload = getPayload();
         payload.remove("firstName");
 
