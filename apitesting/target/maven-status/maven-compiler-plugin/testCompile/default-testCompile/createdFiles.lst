@@ -1,0 +1,4 @@
+com\apitesting\CreateUserTest.class
+com\apitesting\DeleteUserTest.class
+com\apitesting\GetUserByIdTest.class
+com\apitesting\UpdateTest.class
